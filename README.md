@@ -1,8 +1,8 @@
 ![E/R scheme](./db_university.png)
 
-#University database
+# University database
 
-##Milestones
+## Milestones
 
 Model the structure of a database to store all data relating to a university:
 - there are several Departments (e.g. Humanities, Mathematics, Engineering, etc.);
