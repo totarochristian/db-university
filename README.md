@@ -1,3 +1,9 @@
+![E/R scheme](./db_university.png)
+
+#University database
+
+##Milestones
+
 Model the structure of a database to store all data relating to a university:
 - there are several Departments (e.g. Humanities, Mathematics, Engineering, etc.);
 - each Department offers several Degree Courses (e.g. Civilization and Classical Literature, Computer Science, Electronic Engineering, etc.)
@@ -8,5 +14,3 @@ Model the structure of a database to store all data relating to a university:
 - each Student can enroll in more than one exam session;
 - for each exam session in which the student has participated, it is necessary to memorize the mark obtained, even if it is not sufficient.
 Let's think about which entities (tables) to create for our database and then try to establish their relationships. Finally, let's define the columns and data types of each table.
-
-![E/R scheme](./db_university.png)
