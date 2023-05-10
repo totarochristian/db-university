@@ -1,6 +1,6 @@
-![E/R scheme](./db_university.png)
-
 # University database
+
+![E/R scheme](./db_university.png)
 
 ## Milestones
 
