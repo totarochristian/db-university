@@ -9,4 +9,4 @@ Model the structure of a database to store all data relating to a university:
 - for each exam session in which the student has participated, it is necessary to memorize the mark obtained, even if it is not sufficient.
 Let's think about which entities (tables) to create for our database and then try to establish their relationships. Finally, let's define the columns and data types of each table.
 
-![](./db_university.png)
+![E/R scheme](./db_university.png)
