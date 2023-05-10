@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-05-10T18:43:52.921Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="_8FoUdnvSFUGw74VrFw0" version="21.2.8" type="device">
+<mxfile host="Electron" modified="2023-05-10T18:46:59.217Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="lalsCr9fgTy3DViW5umV" version="21.2.8" type="device">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="1493" dy="1963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -832,6 +832,12 @@
             <mxPoint x="410" y="565" as="sourcePoint" />
             <mxPoint x="400" y="610" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="9bL6swH94XsE8dJ1jOy0-295" value="A student can enroll in multiple exam sessions and multiple students can enroll in an exam session." style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1060" y="160" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9bL6swH94XsE8dJ1jOy0-296" value="A student can enroll in only one degree course and many students can enroll in one degree course." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="800" width="200" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
