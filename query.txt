@@ -1,3 +1,8 @@
 SELECT * FROM students WHERE YEAR(date_of_birth) = 1990;
 
 Get all the students born in 1990
+
+
+SELECT * FROM courses WHERE cfu > 10;
+
+Get all the courses with a number of cfu greater then 10
