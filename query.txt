@@ -24,3 +24,8 @@ Select all the courses in the first year and the first semester
 SELECT * FROM exams WHERE hour > '14:00' AND date = '2020-06-20';
 
 Select all the exams in the 20/06/2020 after the 14:00
+
+
+SELECT * FROM degrees WHERE level = 'magistrale';
+
+Select all the magistral degrees
