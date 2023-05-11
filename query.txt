@@ -64,3 +64,23 @@ SELECT COUNT(*) FROM teachers WHERE phone IS NULL;
 
 Select the number of teacher that haven't phone number
 -------------------------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------------------
+------------------------------------------ EXPLANATION ------------------------------------------
+-------------------------------------------- QUERY 3 --------------------------------------------
+-------------------------------------------------------------------------------------------------
+SELECT 
+TO_DAYS(NOW()) AS GiorniPassatiDaOggi,
+TO_DAYS('2000-11-18') AS GiorniPassatiDaDataDiNascita,
+TO_DAYS(NOW()) - TO_DAYS('2000-11-18') AS SottrazioneDeiDueGiorni,
+FROM_DAYS(TO_DAYS(NOW()) - TO_DAYS('2000-07-18')) AS SottrazioneGiorniTrasformatoInData,
+DATE_FORMAT(FROM_DAYS(TO_DAYS(NOW()) - TO_DAYS('2000-11-18')), '%y')+0 AS AnnoDellaDataOttenuta;
+
+1) Get the number of days passed from today.
+2) Get the number of days passed from the birthday date.
+3) Subtract the second from the first.
+4) Transform the result in a date.
+5) Retrieve the value of the year, this value is the number of year passed from the birthday date
+6) Once retrieved it, use to check things
