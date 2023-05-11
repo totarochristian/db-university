@@ -29,3 +29,9 @@ Select all the exams in the 20/06/2020 after the 14:00
 SELECT * FROM degrees WHERE level = 'magistrale';
 
 Select all the magistral degrees
+
+
+
+SELECT COUNT(*) FROM `departments`
+
+Select the number of departments in the university
