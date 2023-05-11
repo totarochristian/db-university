@@ -9,9 +9,9 @@ Get all the courses with a number of cfu greater then 10
 
 
 SELECT *,
-DATE_FORMAT(FROM_DAYS(TO_DAYS(NOW())-TO_DAYS(students.date_of_birth)), '%y')+0 AS 'age'
+DATE_FORMAT(FROM_DAYS(TO_DAYS(NOW())-TO_DAYS(date_of_birth)), '%y')+0 AS 'age'
 FROM students
-WHERE DATE_FORMAT(FROM_DAYS(TO_DAYS(NOW())-TO_DAYS(students.date_of_birth)), '%y')+0 > 30;
+WHERE DATE_FORMAT(FROM_DAYS(TO_DAYS(NOW())-TO_DAYS(date_of_birth)), '%y')+0 > 30;
 
 Select all the students with an age greater then 30 years
 
