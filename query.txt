@@ -32,6 +32,11 @@ Select all the magistral degrees
 
 
 
-SELECT COUNT(*) FROM `departments`
+SELECT COUNT(*) FROM departments
 
 Select the number of departments in the university
+
+
+SELECT COUNT(*) FROM teachers WHERE phone IS NULL;
+
+Select the number of teacher that haven't phone number
