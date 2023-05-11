@@ -14,3 +14,8 @@ FROM students
 WHERE DATE_FORMAT(FROM_DAYS(TO_DAYS(NOW())-TO_DAYS(students.date_of_birth)), '%y')+0 > 30;
 
 Select all the students with an age greater then 30 years
+
+
+SELECT * FROM courses WHERE period = 'I semestre' AND year = 1;
+
+Select all the courses in the first year and the first semester
