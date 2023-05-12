@@ -1,0 +1,10 @@
+SELECT
+students.id,
+students.surname,
+students.name,
+students.fiscal_code
+FROM students
+JOIN degrees ON students.degree_id = degrees.id
+WHERE degrees.name = 'Corso di Laurea in Economia';
+
+Select all the students enrolled in the degree 'Corso di Laurea in Economia'
