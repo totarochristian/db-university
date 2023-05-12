@@ -1,0 +1,7 @@
+SELECT 
+YEAR(students.enrolment_date) As 'year',
+count(*) AS 'enrolled_students'
+FROM `students`
+GROUP BY YEAR(students.enrolment_date);
+
+Count, for each year, the number of students enrolled
