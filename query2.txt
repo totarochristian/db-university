@@ -12,6 +12,17 @@ teachers.office_address,
 COUNT(*) AS 'number_of_teachers'
 FROM `teachers`
 GROUP BY
-teachers.office_address
+teachers.office_address;
 
 Count the number of teacher in the same building
+
+
+SELECT
+exam_student.exam_id,
+COUNT(*) AS 'number_of_subscribers',
+AVG(exam_student.vote) AS 'average_grade'
+FROM `exam_student`
+GROUP BY
+exam_student.exam_id;
+
+For each exam retrieve the average grade and the number of subscribers
