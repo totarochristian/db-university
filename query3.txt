@@ -8,3 +8,18 @@ JOIN degrees ON students.degree_id = degrees.id
 WHERE degrees.name = 'Corso di Laurea in Economia';
 
 Select all the students enrolled in the degree 'Corso di Laurea in Economia'
+
+
+SELECT 
+courses.id,
+courses.name,
+courses.description,
+courses.cfu,
+courses.website
+FROM `courses`
+JOIN degrees ON courses.degree_id = degrees.id
+JOIN departments ON degrees.department_id = departments.id
+WHERE degrees.level = 'magistrale'
+AND departments.name = 'Dipartimento di Neuroscienze';
+
+Select all the courses with the level 'magistrale' of the department 'Dipartimento di Neuroscienze'
