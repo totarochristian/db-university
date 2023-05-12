@@ -5,3 +5,13 @@ FROM `students`
 GROUP BY YEAR(students.enrolment_date);
 
 Count, for each year, the number of students enrolled
+
+
+SELECT 
+teachers.office_address,
+COUNT(*) AS 'number_of_teachers'
+FROM `teachers`
+GROUP BY
+teachers.office_address
+
+Count the number of teacher in the same building
