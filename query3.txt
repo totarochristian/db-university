@@ -37,3 +37,23 @@ JOIN teachers ON teachers.id = course_teacher.teacher_id
 WHERE teachers.id = 44;
 
 Select all the courses where the teacher with id 44 teachs
+
+
+SELECT 
+students.id AS 'student_id',
+students.registration_number,
+students.surname,
+students.name,
+students.fiscal_code,
+students.email,
+departments.id AS 'department_id',
+departments.name AS 'department_name',
+degrees.id AS 'degree_id',
+degrees.name AS 'degree_name',
+degrees.level AS 'degree_level'
+FROM `students`
+JOIN degrees ON students.degree_id = degrees.id
+JOIN departments ON degrees.department_id = departments.id
+ORDER BY students.surname, students.name;
+
+Select for each student (ordered by surname and name) the department and degree data
