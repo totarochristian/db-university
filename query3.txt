@@ -91,3 +91,22 @@ WHERE departments.name = 'Dipartimento di Matematica'
 GROUP BY teachers.surname,teachers.name;
 
 Select all the teachers of the department 'Dipartimento di Matematica'
+
+
+SELECT
+students.id AS 'student_id',
+students.surname AS 'student_surname',
+students.name AS 'student_name',
+courses.id AS 'course_id',
+courses.name AS 'course_name',
+COUNT(exam_student.vote) AS 'number_of_attemps',
+MIN(exam_student.vote) AS 'min_vote',
+MAX(exam_student.vote) AS 'max_vote'
+FROM students
+JOIN exam_student ON students.id = exam_student.student_id
+JOIN exams ON exam_student.exam_id = exams.id
+JOIN courses ON exams.course_id = courses.id
+GROUP BY students.id,courses.id
+ORDER BY students.id,courses.id,exams.date,exams.hour;
+
+Select for each students the number of attempt to pass each exam (show also the min and max vote for each exam)
