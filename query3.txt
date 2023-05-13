@@ -76,3 +76,18 @@ JOIN teachers ON course_teacher.teacher_id = teachers.id
 ORDER BY degrees.id,courses.id,teachers.surname,teachers.name;
 
 Select all the degrees with courses and teachers data, ordered by the degrees id, the courses id and the surname and the name of the teacher
+
+
+SELECT
+teachers.id AS 'teacher_id',
+teachers.surname AS 'teacher_surname',
+teachers.name AS 'teacher_name'
+FROM courses
+JOIN degrees ON courses.degree_id = degrees.id
+JOIN course_teacher ON courses.id = course_teacher.course_id
+JOIN teachers ON course_teacher.teacher_id = teachers.id
+JOIN departments ON departments.id = degrees.department_id
+WHERE departments.name = 'Dipartimento di Matematica'
+GROUP BY teachers.surname,teachers.name;
+
+Select all the teachers of the department 'Dipartimento di Matematica'
