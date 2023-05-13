@@ -57,3 +57,22 @@ JOIN departments ON degrees.department_id = departments.id
 ORDER BY students.surname, students.name;
 
 Select for each student (ordered by surname and name) the department and degree data
+
+
+SELECT
+degrees.id AS 'degree_id',
+degrees.name AS 'degree_name',
+degrees.level AS 'degree_level',
+courses.id AS 'course_id',
+courses.name AS 'course_name',
+courses.description AS 'course_description',
+course_teacher.teacher_id AS 'teacher_id',
+teachers.surname AS 'teacher_surname',
+teachers.name AS 'teacher_name'
+FROM courses
+JOIN degrees ON courses.degree_id = degrees.id
+JOIN course_teacher ON courses.id = course_teacher.course_id
+JOIN teachers ON course_teacher.teacher_id = teachers.id
+ORDER BY degrees.id,courses.id,teachers.surname,teachers.name;
+
+Select all the degrees with courses and teachers data, ordered by the degrees id, the courses id and the surname and the name of the teacher
